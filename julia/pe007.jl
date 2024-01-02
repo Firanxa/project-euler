@@ -1,7 +1,7 @@
 using BenchmarkTools
 using Primes
 
-function solve_pe007(N::Integer) :: Integer
+function solve_pe007(N::Int) :: Int
     # Returns the N-th prime number.
     return prime(N)
 end

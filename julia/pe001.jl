@@ -1,6 +1,6 @@
 using BenchmarkTools
 
-function solve_pe001(N::Integer) :: Integer
+function solve_pe001(N::Int) :: Int
     multiples_sum = 0
     for i in 1:(N - 1)
         if mod(i, 3) == 0 || mod(i, 5) == 0

@@ -1,6 +1,6 @@
 using BenchmarkTools
 
-function _is_palindromic(n::Integer) :: Bool
+function _is_palindromic(n::Int) :: Bool
     # This is the most straightforward way to determine whether an integer is palindromic.
     # return digits(n) == reverse(digits(n))
 
@@ -21,7 +21,7 @@ function _is_palindromic(n::Integer) :: Bool
     return true
 end
 
-function solve_pe004(N::Integer) :: Integer
+function solve_pe004(N::Int) :: Int
     largest_palindrome = 0
     # Iterate over the range of N-digit numbers. Memoise which products have already been
     # tested using a hash map.

@@ -1,6 +1,6 @@
 using BenchmarkTools
 
-function sum_square(n::Integer) :: Integer
+function sum_square(n::Int) :: Int
     if n < 0
         return 0
     end
@@ -8,7 +8,7 @@ function sum_square(n::Integer) :: Integer
     return n * (n + 1) * (2n + 1) / 6
 end
 
-function square_sum(n::Integer) :: Integer
+function square_sum(n::Int) :: Int
     if n < 0
         return 0
     end
@@ -16,7 +16,7 @@ function square_sum(n::Integer) :: Integer
     return (n * (n + 1) / 2)^2
 end
 
-function solve_pe006(N::Integer) :: Integer
+function solve_pe006(N::Int) :: Int
     return square_sum(N) - sum_square(N)
 end
 

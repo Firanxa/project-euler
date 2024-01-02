@@ -1,6 +1,6 @@
 using BenchmarkTools
 
-function solve_pe005(N::Integer) :: Integer
+function solve_pe005(N::Int) :: Int
     return lcm(1:N)
 end
 

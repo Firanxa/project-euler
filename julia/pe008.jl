@@ -1,6 +1,6 @@
 using BenchmarkTools
 
-function solve_pe008(N::Integer, num::String) :: Integer
+function solve_pe008(N::Int, num::String) :: Int
     max_product = 0
     for i in 1:(length(num) - N)
         num_substring = num[i:(i + N - 1)]

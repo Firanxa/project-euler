@@ -1,6 +1,6 @@
 using BenchmarkTools
 
-function solve_pe009(perimeter::Integer) :: Integer
+function solve_pe009(perimeter::Int) :: Int
     # This solution uses Heron's formula for the area of a triangle. Given the semiperimeter
     # S = perimeter / 2 and that a < b < c, the area of this right triangle is
     #

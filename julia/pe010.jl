@@ -1,7 +1,7 @@
 using BenchmarkTools
 using Primes
 
-function solve_pe010(N::Integer) :: Integer
+function solve_pe010(N::Int) :: Int
     # Returns the sum of the collection of primes up to N. This is less memory efficient
     # than iteratively yielding primes with a sieve.
     return sum(primes(N))

@@ -1,7 +1,7 @@
 using BenchmarkTools
 using Primes
 
-function solve_pe003(N::Integer) :: Integer
+function solve_pe003(N::Int) :: Int
     # This returns the last element of a sorted vector of the prime factors of N, with
     # multiplicity.
     return factor(Vector, N)[end]

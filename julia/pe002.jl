@@ -1,6 +1,6 @@
 using BenchmarkTools
 
-function solve_pe002(N::Integer) :: Integer
+function solve_pe002(N::Int) :: Int
     f1, f2 = 1, 2
     fn = f1 + f2
     
